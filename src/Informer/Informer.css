@@ -1,0 +1,11 @@
+.informer-wrap{
+    max-width: 300px;
+    margin: 0 auto;
+}
+.informer-item{
+    border: 1px solid black;
+    background-color: aqua;
+    color: cornflowerblue;
+    margin: 10px;
+
+}
