@@ -1,11 +1,17 @@
 .informer-wrap{
-    max-width: 300px;
+    max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #bdbdbd;
+    justify-content: space-around;
 }
 .informer-item{
+    padding: 5px 10px;
     border: 1px solid black;
-    background-color: aqua;
-    color: cornflowerblue;
+    background-color: rgba(114, 156, 156, 0.637);
+    color: rgb(45, 52, 65);
     margin: 10px;
+    box-sizing: border-box;
 
 }
