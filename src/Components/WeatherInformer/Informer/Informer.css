@@ -1,0 +1,23 @@
+.informer-wrap{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b3e9a85d;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px black;
+}
+.informer-item{
+    min-width: 144px;
+    padding: 20px 10px;
+    border: 2px solid rgba(64, 194, 107, 0.637);
+    background-color:lightgoldenrodyellow;
+    color: rgb(61, 64, 68);
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
