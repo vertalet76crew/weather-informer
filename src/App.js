@@ -16,11 +16,15 @@ class App extends Component {
   }
  
   fetchData = async() =>{
-   const url =  await fetch(apiUrl);
-   const data = await url.json();
-   console.log(data)
-   this.setState({weather: data.list}) 
-
+    try{
+      const url =  await fetch(apiUrl);
+      const data = await url.json();
+      console.log(data)
+      this.setState({weather: data.list}) 
+    }
+    catch(err){
+      console.error("Ошибка: ",err)
+    }
   }
   
   editDateHandler = (d) => {
@@ -30,7 +34,6 @@ class App extends Component {
      return resultDate
  }
   render(){
-  
     return (
       <BrowserRouter>
         <div className="App">
@@ -40,13 +43,9 @@ class App extends Component {
           </div>
           <Route path='/' exact render ={ () => <HomePage/> }/>
           <Route path='/WeatherInformer'  render= {() => <WeatherInformer weather={this.state.weather} date = {this.editDateHandler} fetchDataHandler={this.fetchData}/>}/>
-          
         </div>
       </BrowserRouter>
-      
     );
   }
-  
 }
-
 export default App;
