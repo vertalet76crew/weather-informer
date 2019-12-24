@@ -55,7 +55,7 @@ class App extends Component {
     const newState = {
       background: "#084449",
       flag: true,
-      res: `${stop} М/С`,
+      res: `${stop} ms`,
       falseStart: false
     };
     if (!this.state.game.start) {
