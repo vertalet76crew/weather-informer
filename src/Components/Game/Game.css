@@ -1,0 +1,13 @@
+.Game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    cursor: pointer;
+}
+.Game-content{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 40px;
+
+}
