@@ -81,7 +81,7 @@ class App extends Component {
   editDateHandler = d => {
     let date = new Date();
     date.setTime(d * 1000);
-    let resultDate = moment(date).format('hh:mm DD.MM.YYYY')
+    let resultDate = moment(date).format('HH:mm DD.MM.YYYY')
     return resultDate;
   };
 
