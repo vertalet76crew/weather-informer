@@ -4,6 +4,7 @@ import WeatherInformer from "./Components/WeatherInformer/WeatherInformer";
 import { BrowserRouter } from "react-router-dom";
 import { Route, NavLink, Redirect } from "react-router-dom";
 import Game from "./Components/Game/Game";
+import moment from "moment";
 
 const apiKey = "15bd475ed9f45af139017a887f756443";
 const cityId = "499099";
@@ -80,10 +81,7 @@ class App extends Component {
   editDateHandler = d => {
     let date = new Date();
     date.setTime(d * 1000);
-    let resultDate = `${date.getHours()}:${date
-      .getMinutes()
-      .toLocaleString()} ${date.getDate()}.${date.getMonth() +
-      1}. ${date.getFullYear()}`;
+    let resultDate = moment(date).format('hh:mm DD.MM.YYYY')
     return resultDate;
   };
 
