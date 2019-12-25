@@ -111,7 +111,7 @@ class App extends Component {
                 flag={this.state.game.flag}
                 background={this.state.game.background}
                 res={this.state.game.res}
-                falseStart={this.falseStart}
+                falseStart={this.state.game.falseStart}
               />
             )}
           />
